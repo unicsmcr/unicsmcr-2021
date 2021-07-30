@@ -15,10 +15,12 @@
     "pino": "^6.3.2",
     "pino-pretty": "^4.0.0",
     "querystring": "^0.2.0",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "build": "node scripts/build | pino-pretty",
     "build:live": "nodemon scripts/build | pino-pretty",
+    "serve": "serve dist -p 8080"
   },
   "repository": {
     "type": "git",
