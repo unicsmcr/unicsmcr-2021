@@ -1,11 +1,11 @@
 # UniCS Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9150af20-1025-42c7-991f-51a8c5aef3c3/deploy-status)](https://app.netlify.com/sites/unicsmcr/deploys)
-![Build](https://github.com/unicsmcr/unicsmcr.com/workflows/Build/badge.svg?branch=master)
+![Netlify Status](https://img.shields.io/netlify/03a47887-702b-4311-9c1e-f82d80510f74)
+![Build](https://img.shields.io/github/workflow/status/unicsmcr/unicsmcr.com/Build)
 
 The website for the UniCS society!
 
-This project extends some of the work done by the [2019/2020 committee.](https://github.com/unicsmcr/unicsmcr.com-2019)
+This project extends some of the work done by the [2020/2021 committee.](https://github.com/unicsmcr/unicsmcr.com-2020)
 
 ## Contributing
 
