@@ -1,7 +1,6 @@
 # UniCS Website
 
 ![Netlify Status](https://img.shields.io/netlify/03a47887-702b-4311-9c1e-f82d80510f74)
-![Build](https://img.shields.io/github/workflow/status/unicsmcr/unicsmcr.com/Build)
 
 The website for the UniCS society!
 
