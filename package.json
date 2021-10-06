@@ -4,10 +4,10 @@
   "description": "",
   "devDependencies": {
     "@sendgrid/mail": "^7.1.1",
-    "axios": "^0.19.2",
+    "axios": "^0.22.0",
     "clean-css": "^4.2.3",
     "fs-extra": "^9.0.1",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "html-minifier": "^4.0.0",
     "klaw": "^3.0.0",
     "node-fetch": "^2.6.1",
