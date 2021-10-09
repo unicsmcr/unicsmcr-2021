@@ -25,6 +25,11 @@
     "img": "lucy"
   },
   {
+    "name": "Zoya Anwar",
+    "role": "Events Officer",
+    "img": "zoya"
+  },
+  {
     "name": "Eiman Baig",
     "role": "Treasurer",
     "img": "eiman"
@@ -58,5 +63,10 @@
     "name": "Alexandru Constantin",
     "role": "Game Dev Head",
     "img": "alexandru"
+  },
+  {
+    "name": "Luke Braithwaite",
+    "role": "Hackathon Lead",
+    "img": "luke"
   }
 ]
