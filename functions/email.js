@@ -12,8 +12,17 @@ const failResponse = {
 
 const sendEmail = async (msg) => {
   let response;
+  let transporter = nodemailer.createTransport({
+    host: "premium61.web-hosting.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.SEND_EMAIL,
+      pass: process.env.SEND_PASSWORD,
+    },
+  });
   try {
-    response = await sgMail.send(msg, false);
+    response = await transporter.sendMail(msg)
   } catch (err) {
     return { ...failResponse, body: "Failed to send email" + err };
   }
@@ -36,9 +45,9 @@ exports.handler = async (event, _context) => {
 
   const {
     RECAPTCHA_SITE_SECRET,
-    SENDGRID_API_KEY,
+
     UNICS_EMAIL,
-    UNICS_GAME_DEV_EMAIL,
+    UNICS_GAMEDEV_EMAIL,
   } = process.env;
 
   // Parse the request body
@@ -54,7 +63,7 @@ exports.handler = async (event, _context) => {
   if (to === "unics:core") {
     toEmail = UNICS_EMAIL;
   } else if (to === "unics:game-dev") {
-    toEmail = UNICS_GAME_DEV_EMAIL;
+    toEmail = UNICS_GAMEDEV_EMAIL;
   } else {
     return { statusCode: 400, body: "Invalid UniCS subteam selection" };
   }
@@ -78,7 +87,6 @@ exports.handler = async (event, _context) => {
   }
 
   // After recaptcha verification, send the email
-  sgMail.setApiKey(SENDGRID_API_KEY);
   const msg = {
     to: toEmail,
     from: email,
