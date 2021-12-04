@@ -45,7 +45,6 @@ exports.handler = async (event, _context) => {
 
   const {
     RECAPTCHA_SITE_SECRET,
-
     UNICS_EMAIL,
     UNICS_GAMEDEV_EMAIL,
   } = process.env;
@@ -89,7 +88,7 @@ exports.handler = async (event, _context) => {
   // After recaptcha verification, send the email
   const msg = {
     to: toEmail,
-    from: email,
+    from: process.env.SEND_EMAIL,
     subject: `${name}: ${email}`,
     html: message,
   };
