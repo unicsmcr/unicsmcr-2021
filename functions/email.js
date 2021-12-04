@@ -1,6 +1,6 @@
 // Need to use default import, per https://github.com/netlify/netlify-lambda#debugging
 const fetch = require("node-fetch").default;
-const sgMail = require("@sendgrid/mail");
+const nodemailer = require("nodemailer");
 const querystring = require("querystring");
 
 const CAPTCHA_API_ENDPOINT = "https://www.google.com/recaptcha/api/siteverify";
