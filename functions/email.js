@@ -22,15 +22,14 @@ const sendEmail = async (msg) => {
     },
   });
   try {
-    response = await transporter.sendMail(msg)
+    response = await transporter.sendMail(msg);
+    return {
+      statusCode: 200,
+      body: "Contact form submitted!",
+    };
   } catch (err) {
     return { ...failResponse, body: "Failed to send email" + err };
   }
-
-  return {
-    statusCode: response[0].statusCode,
-    body: "Contact form submitted!",
-  };
 };
 
 // eslint-disable-next-line no-unused-vars
@@ -43,11 +42,8 @@ exports.handler = async (event, _context) => {
     };
   }
 
-  const {
-    RECAPTCHA_SITE_SECRET,
-    UNICS_EMAIL,
-    UNICS_GAMEDEV_EMAIL,
-  } = process.env;
+  const { RECAPTCHA_SITE_SECRET, UNICS_EMAIL, UNICS_GAMEDEV_EMAIL } =
+    process.env;
 
   // Parse the request body
   let body = {};
