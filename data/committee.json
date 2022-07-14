@@ -1,72 +1,68 @@
 [
   {
-    "name": "Rakha Djokosoetono",
+    "name": "Gwydion Smit",
     "role": "Co-Chair",
-    "img": "rakha"
+    "img": "gwydion"
   },
   {
-    "name": "Ingy Abdelhalim",
+    "name": "Germaine George",
     "role": "Co-Chair",
-    "img": "ingy"
+    "img": "germaine"
   },
   {
-    "name": "Aryan Agrawal",
+    "name": "Sambbhav Khare",
     "role": "Dev Officer",
-    "img": "aryan"
+    "img": "sambbhav"
   },
   {
-    "name": "Sumaiyah Bhaiyat",
+    "name": "Mehar Mehta",
+    "role": "PR Officer",
+    "img": "mehar"
+  },
+  {
+    "name": "Dhruv Sharma",
     "role": "Graphics Officer",
-    "img": "sumaiyah"
+    "img": "dhruv"
+  },
+
+  {
+    "name": "Dhrishaj Garg",
+    "role": "Events Officer",
+    "img": "dhrishraj"
   },
   {
-    "name": "Lucy Porte",
-    "role": "Events Officer",
-    "img": "lucy"
+    "name": "Ali Lakho",
+    "role": "Treasurer",
+    "img": "ali"
+  },
+  {
+    "name": "Joshua Simanullang",
+    "role": "Secretary",
+    "img": "joshua"
+  },
+  {
+    "name": "Siqi Li",
+    "role": "Procurement Officer",
+    "img": "siqi"
+  },
+  {
+    "name": "Keshav Gupta",
+    "role": "May Ball Officer",
+    "img": "keshav"
+  },
+  {
+    "name": "MJ Ponsonby",
+    "role": "Game Dev Head",
+    "img": "mj"
   },
   {
     "name": "Zoya Anwar",
-    "role": "Events Officer",
+    "role": "Co-Hackathon Lead",
     "img": "zoya"
   },
   {
-    "name": "Eiman Baig",
-    "role": "Treasurer",
-    "img": "eiman"
-  },
-  {
-    "name": "Omar Badawi",
-    "role": "PR Officer",
-    "img": "omar"
-  },
-  {
-    "name": "Ziyang Yu",
-    "role": "Secretary",
-    "img": "ziyang"
-  },
-  {
-    "name": "Raluca Stinga",
-    "role": "Procurement Officer",
-    "img": "raluca"
-  },
-  {
-    "name": "Saurav Kumar",
-    "role": "May Ball Officer",
-    "img": "saurav"
-  },
-  {
-    "name": "Mikolaj Lenczewski",
-    "role": "Game Dev Head",
-    "img": "mikolaj"
-  },
-  {
-    "name": "Alexandru Constantin",
-    "role": "Game Dev Head",
-    "img": "alexandru"
-  },
-  {
-    "name": "Luke Braithwaite",
-    "role": "Hackathon Lead",
-    "img": "luke"
+    "name": "Mateusz Krajewski",
+    "role": "Co-Hackathon Lead",
+    "img": "mateusz"
   }
 ]
