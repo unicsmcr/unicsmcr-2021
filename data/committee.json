@@ -25,11 +25,7 @@
     "img": "dhruv"
   },
 
-  {
-    "name": "Dhrishraj Garg",
-    "role": "Events Officer",
-    "img": "dhrishraj"
-  },
+  
   {
     "name": "Ali Lakho",
     "role": "Treasurer",
@@ -64,5 +60,10 @@
     "name": "Mateusz Krajewski",
     "role": "Co-Hackathon Lead",
     "img": "mateusz"
+  },
+  {
+    "name": "Dhrishraj Garg",
+    "role": "Events Officer",
+    "img": "dhrishraj"
   }
 ]
