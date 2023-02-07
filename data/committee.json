@@ -10,6 +10,16 @@
     "img": "germaine"
   },
   {
+    "name": "Ali Lakho",
+    "role": "Treasurer",
+    "img": "ali"
+  },
+  {
+    "name": "Joshua Simanullang",
+    "role": "Secretary",
+    "img": "joshua"
+  },
+  {
     "name": "Sambbhav Khare",
     "role": "Dev Officer",
     "img": "sambbhav"
@@ -26,16 +36,7 @@
   },
 
   
-  {
-    "name": "Ali Lakho",
-    "role": "Treasurer",
-    "img": "ali"
-  },
-  {
-    "name": "Joshua Simanullang",
-    "role": "Secretary",
-    "img": "joshua"
-  },
+  
   {
     "name": "Siqi Li",
     "role": "Procurement Officer",
