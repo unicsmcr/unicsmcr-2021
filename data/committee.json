@@ -34,7 +34,11 @@
     "role": "Graphics Officer",
     "img": "dhruv"
   },
-
+  {
+    "name": "MJ Ponsonby",
+    "role": "Game Dev Head",
+    "img": "mj"
+  },
   
   
   {
@@ -47,11 +51,7 @@
     "role": "May Ball Officer",
     "img": "keshav"
   },
-  {
-    "name": "MJ Ponsonby",
-    "role": "Game Dev Head",
-    "img": "mj"
-  },
+ 
   {
     "name": "Mihirr M Bhaagwat",
     "role": "Co-Hackathon Lead",
