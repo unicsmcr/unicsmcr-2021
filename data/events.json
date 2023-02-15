@@ -1,33 +1,42 @@
 {
   "upcoming": [
     {
-      "name": "Altitude X by PeakAI",
-      "date": "4 Nov 2021",
-      "url": "https://altitudex.live",
-      "form": "https://peak-ai.typeform.com/to/E0122un9",
-      "form_description": "Click here for a chance to win a free ticket to Altitude X!"
+      "name": "Kilburn Out Of Hours Games Night",
+      "date:" "24 February 2023"
+    }
+    {
+      "name": "Bet365 Challenge",
+      "date:" "1 Match 2023"
+      %url
+      %form
+      %form_description
+    }
+    {
+      "name": "Board Games + Picnic",
+      "date:" "15 Match 2023"
+    }
+    {
+      "name": "Alton Towers",
+      "date:" "TBC"
     }
   ],
   "past": [
     {
+      "name": "QRT Talk",
+      "date": "8 Feb 2023",
+    },
+    {
       "name": "Bpuzzled by Bloomberg",
-      "date": "4 Nov 2020",
-      "url": "https://www.facebook.com/events/2459591361017474"
+      "date": "31 January 2023",
     },
     {
-      "name": "KB Halloween Event",
-      "date": "29 Oct 2020",
-      "url": "https://www.facebook.com/events/649246119285849"
+      "name": "Football at the Turing Tap",
+      "date": "27 November 2022",
     },
     {
-      "name": "OutSystems Event",
-      "date": "21 Oct 2020",
-      "url": "https://www.facebook.com/events/3224421447667069"
-    },
-    {
-      "name": "Academic and Departmental Society Expo",
-      "date": "5 Oct 2020",
-      "url": "https://www.facebook.com/events/2705786876327425"
+      "name": "Weekly Workshop",
+      "date": "23 Nov 2022",
+      %url
     }
   ]
 }
