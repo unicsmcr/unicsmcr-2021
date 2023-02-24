@@ -1,12 +1,16 @@
 {
   "upcoming": [
     {
-      "name": "Kilburn Out Of Hours Games Night",
-      "date": "24 Feb 2023"
-    },
-    {
       "name": "Bet365 Challenge",
       "date": "1 Mar 2023"
+    },
+    {
+      "name": "Kilburn Out Of Hours Games Night",
+      "date": "03 Mar 2023"
+    },
+    {
+      "name": "Booking.com",
+      "date": "08 Mar 2023"
     },
     {
       "name": "Board Games + Picnic",
@@ -14,6 +18,10 @@
     },
     {
       "name": "Alton Towers",
+      "date": "27 Mar 2023"
+    },
+    {
+      "name": "Karaoke",
       "date": "TBC"
     }
   ],
