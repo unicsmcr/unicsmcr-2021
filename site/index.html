@@ -193,145 +193,131 @@
   </head>
 
   <body>
-    {{> nav }}
-    <div class="headerHolder">
-      <header id="hero" class="section">
-        <div class="container padded">
-          <h1>Uni<span class="gold">CS</span></h1>
-          <br />
-          <p class="subtitle">
-            University of Manchester<br />Computer Science Society
-          </p>
-        </div>
-      </header>
-    </div>
-
-    <section id="intro" class="section">
-      <div class="container padded">
-        <h1>About us</h1>
-        <p>
-          UniCS is the University of Manchester's tech society. We are a big
-          community with a passion for technology and creating innovative
-          solutions for everyone to enjoy. Through our hackathons and other
-          events, we aim to bring students and industry closer together. When we
-          aren’t organising our own events we also travel to events in places
-          like Barcelona, Helsinki, and Bordeaux, amongst other exotic
-          destinations, often free due to various hackathon sponsors. Come join
-          us to see what we get up to this year!
-        </p>
+      {{> nav }}
+      <div class="headerHolder">
+          <header id="hero" class="section">
+              <div class="container padded">
+                  <h1>Uni<span class="gold">CS</span></h1>
+                  <br />
+                  <p class="subtitle">
+                      University of Manchester<br />Computer Science Society
+                  </p>
+              </div>
+          </header>
       </div>
-    </section>
 
-    <section id="events" class="section">
-      <div class="container padded">
-        <h1>Events</h1>
-        <p>
-          Our events are suited to every level of knowledge and all degree
-          courses. If you are someone who is interested in knowing how they can
-          use computers to see an idea come to life, UniCS is the society for
-          you. It doesn’t matter if you have never touched a computer or been
-          programming for years, you will never be bored at our events. And if
-          you still aren’t convinced, we have free pizza (and occasionally
-          drinks).
-        </p>
-        <p>
-          You can keep up-to-date with our events and see a full list of them by
-          following our
-          <a
-            href="https://www.facebook.com/unicsmcr"
-            target="_blank"
-            rel="noreferrer"
-            >Facebook page.</a
-          >
-        </p>
-        <p>
-          You can also see our events calendar <a
-          href = "https://calendar.google.com/calendar/embed?src=98ae4449f97bb3e8675a6f4d1cd2037b7a00242d21af729b5b464781cef1f614%40group.calendar.google.com&ctz=Europe%2FLondon"
-          target="_blank"
-          rel="noreferrer"
-          >here.</a
-          >
-        </p>
-        <div id="events-lists">
-          <section id="upcoming-events">
-            <h2>Upcoming & Ongoing</h2>
-            <ul>
-              {{#events.upcoming}}
-              <li class="event">
-                <a
-                  href="{{url}}"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="{{name}}"
-                >
-                  <div class="date"><span>{{date}}</span></div>
-                  <div class="title">{{name}}</div>
-                </a>
-                {{#if form}}
-                <a
-                  href="{{form}}"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="{{form_description}}"
-                >
-                  <div class="title" style="text-align: center">
-                    <i>{{form_description}}</i>
-                  </div>
-                </a>
-                {{/if}}
-              </li>
+      <section id="intro" class="section">
+          <div class="container padded">
+              <h1>About us</h1>
+              <p>
+                  UniCS is the University of Manchester's tech society. We are a big
+                  community with a passion for technology and creating innovative
+                  solutions for everyone to enjoy. Through our hackathons and other
+                  events, we aim to bring students and industry closer together. When we
+                  aren’t organising our own events we also travel to events in places
+                  like Barcelona, Helsinki, and Bordeaux, amongst other exotic
+                  destinations, often free due to various hackathon sponsors. Come join
+                  us to see what we get up to this year!
+              </p>
+          </div>
+      </section>
 
-              {{else}}
-              <li class="placeholder">
-                We don't have any upcoming events right now, but follow our
-                <a
-                  href="https://www.facebook.com/unicsmanchester"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Facebook page</a
-                >
-                to find out when we do!
-              </li>
-              {{/events.upcoming}}
-            </ul>
-          </section>
-          <section id="past-events">
-            <h2>Past</h2>
-            <ul>
-              {{#events.past}}
-              <li class="event">
-                <a
-                  href="{{url}}"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="{{name}}"
-                >
-                  <div class="date"><span>{{date}}</span></div>
-                  <div class="title">{{name}}</div>
-                </a>
-              </li>
-              {{/events.past}}
-            </ul>
-          </section>
-        </div>
-      </div>
-    </section>
+      <section id="committee" class="section">
+          <div class="container padded">
+              <h1>Committee</h1>
+              <ul id="committee-list">
+                  {{#committee}}
+                  <li>
+                      <img src="assets/people/{{img}}.jpg" alt="{{name}}" />
+                      <p class="name">{{name}}</p>
+                      <p class="role">{{role}}</p>
+                  </li>
+                  {{/committee}}
+              </ul>
+          </div>
+      </section>
 
-    <section id="committee" class="section">
-      <div class="container padded">
-        <h1>Committee</h1>
-        <ul id="committee-list">
-          {{#committee}}
-          <li>
-            <img src="assets/people/{{img}}.jpg" alt="{{name}}" />
-            <p class="name">{{name}}</p>
-            <p class="role">{{role}}</p>
-          </li>
-          {{/committee}}
-        </ul>
-      </div>
-    </section>
-    {{> footer }}
+      <section id="events" class="section">
+          <div class="container padded">
+              <h1>Events</h1>
+              <p>
+                  Our events are suited to every level of knowledge and all degree
+                  courses. If you are someone who is interested in knowing how they can
+                  use computers to see an idea come to life, UniCS is the society for
+                  you. It doesn’t matter if you have never touched a computer or been
+                  programming for years, you will never be bored at our events. And if
+                  you still aren’t convinced, we have free pizza (and occasionally
+                  drinks).
+              </p>
+              <p>
+                  You can keep up-to-date with our events and see a full list of them by
+                  following our
+                  <a href="https://www.facebook.com/unicsmcr"
+                     target="_blank"
+                     rel="noreferrer">Facebook page.</a>
+              </p>
+              <p>
+                  You can also see our events calendar <a href="https://calendar.google.com/calendar/embed?src=98ae4449f97bb3e8675a6f4d1cd2037b7a00242d21af729b5b464781cef1f614%40group.calendar.google.com&ctz=Europe%2FLondon"
+                                                          target="_blank"
+                                                          rel="noreferrer">here.</a>
+              </p>
+              <div id="events-lists">
+                  <section id="upcoming-events">
+                      <h2>Upcoming & Ongoing</h2>
+                      <ul>
+                          {{#events.upcoming}}
+                          <li class="event">
+                              <a href="{{url}}"
+                                 target="_blank"
+                                 rel="noreferrer"
+                                 aria-label="{{name}}">
+                                  <div class="date"><span>{{date}}</span></div>
+                                  <div class="title">{{name}}</div>
+                              </a>
+                              {{#if form}}
+                              <a href="{{form}}"
+                                 target="_blank"
+                                 rel="noreferrer"
+                                 aria-label="{{form_description}}">
+                                  <div class="title" style="text-align: center">
+                                      <i>{{form_description}}</i>
+                                  </div>
+                              </a>
+                              {{/if}}
+                          </li>
+
+                          {{else}}
+                          <li class="placeholder">
+                              We don't have any upcoming events right now, but follow our
+                              <a href="https://www.facebook.com/unicsmanchester"
+                                 target="_blank"
+                                 rel="noreferrer">Facebook page</a>
+                              to find out when we do!
+                          </li>
+                          {{/events.upcoming}}
+                      </ul>
+                  </section>
+                  <section id="past-events">
+                      <h2>Past</h2>
+                      <ul>
+                          {{#events.past}}
+                          <li class="event">
+                              <a href="{{url}}"
+                                 target="_blank"
+                                 rel="noreferrer"
+                                 aria-label="{{name}}">
+                                  <div class="date"><span>{{date}}</span></div>
+                                  <div class="title">{{name}}</div>
+                              </a>
+                          </li>
+                          {{/events.past}}
+                      </ul>
+                  </section>
+              </div>
+          </div>
+      </section>
+
+      {{> footer }}
   </body>
   <script src="scripts/email.js"></script>
 </html>
