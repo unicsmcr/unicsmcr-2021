@@ -3,193 +3,7 @@
   <head>
     {{> head }}
     <title>UniCS</title>
-    <style>
-      .gold {
-        color: #ffcc33;
-      }
-
-      .headerHolder {
-        background-color: black;
-      }
-
-      header {
-        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-          url(assets/cover.jpg);
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-      }
-
-      header h1,
-      header .subtitle {
-        display: inline-block;
-        padding: 16px;
-        background: black;
-      }
-
-      header.section {
-        color: white;
-        text-align: center;
-        padding: 90px 0;
-        font-weight: bold;
-      }
-
-      #intro {
-        background: #ffcc33;
-        color: black;
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-      }
-
-      #committee {
-        background: white;
-      }
-
-      #committee-list {
-        list-style: none;
-        margin: 0px -16px -16px -32px;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      #committee-list li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 125px;
-        margin: 32px;
-      }
-
-      #committee-list li img {
-        width: 125px;
-        height: 125px;
-        border-radius: 75px;
-        margin-bottom: 16px;
-      }
-
-      #committee-list p {
-        margin: 0;
-        font-weight: bold;
-        line-height: 32px;
-      }
-
-      #committee-list .name {
-        font-weight: bold;
-        font-size: 18px;
-        text-align: center;
-      }
-
-      #committee-list .role {
-        font-size: 16px;
-        color: #444;
-        text-align: center;
-        line-height: 24px;
-      }
-
-      #events-lists {
-        display: flex;
-        flex-direction: column;
-        margin-top: 64px;
-      }
-
-      #events-lists section {
-        flex: 1;
-      }
-
-      #events-lists ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      #events-lists li.event a {
-        display: flex;
-        align-items: center;
-        height: 72px;
-        background: white;
-        border: 1px solid grey;
-        box-shadow: 0 4px 8px -4px grey;
-      }
-
-      #events-lists li:not(:first-child) {
-        margin-top: 24px;
-      }
-
-      #events-lists .date {
-        width: 72px;
-        height: 72px;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-      }
-
-      #upcoming-events .date {
-        background: #660099;
-        color: white;
-      }
-
-      #upcoming-events .date.ongoing {
-        background: #ffcc33;
-        color: black;
-      }
-
-      #past-events .date {
-        background: #5d5d5d;
-        color: white;
-      }
-
-      #events-lists .date span {
-        text-transform: uppercase;
-        width: 100%;
-        word-spacing: 64px;
-        text-align: center;
-      }
-
-      #events-lists .title {
-        background: white;
-        width: 100%;
-        padding: 0 16px;
-        font-size: 20px;
-        flex: 1;
-      }
-
-      #events-lists li.placeholder {
-        margin: 64px 0;
-        color: #4a4a4a;
-        font-size: 20px;
-        text-align: center;
-      }
-
-      #events-lists li.event a {
-        color: black;
-        font-weight: normal;
-      }
-
-      @media screen and (min-width: 960px) {
-        header.section {
-          padding: 220px 0;
-        }
-
-        #intro {
-          background: #ffcc33;
-          color: black;
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-        }
-
-        #events-lists {
-          flex-direction: row;
-        }
-
-        #committee-list {
-          margin-top: 64px;
-        }
-
-        #upcoming-events {
-          margin-right: 64px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -236,6 +50,109 @@
               </ul>
           </div>
       </section>
+
+
+
+      <section id="sponsors" class="section">
+          <div class="container padded">
+              <h1>Our Sponsors</h1>
+              <p>
+                  Interested in sponsoring us? <a href="#contact">Contact us</a> below
+                  to find out more!
+              </p>
+          </div>
+          <div class="container padded">
+              <h1>Gold Sponsors</h1>
+              <ul class="sponsors-list">
+                  <li id="bet365">
+                      <div class="sponsor-image">
+                          <a href="https://www.bet365.com/#/HO/" target="_blank">
+                              <img src="assets/sponsors/bet365.png" />
+                          </a>
+                      </div>
+                      <p class="sponsor-desc">
+                          bet365, the world's leading online betting and gaming company, is
+                          a driving force in the development of enterprise and Internet
+                          technology. Delivering an unrivalled online experience to more
+                          than 63 million customers in 21 languages. Innovation continues to
+                          be our lifeblood and we pride ourselves on the standards of
+                          customer service we deliver. Driven by a shared vision to be the
+                          best in our industry, a technology team in excess of 1,600 people
+                          work in house to provide the technological advances that enable us
+                          to maintain our leadership position. Giving our teams the freedom
+                          to innovate is essential to our success. Our award winning
+                          business has worked hard to cultivate a culture of creativity
+                          where good ideas and a techno entrepreneurial attitude are
+                          encouraged and rewarded. Today we continue to push technological
+                          boundaries and break new ground in software innovation.
+                      </p>
+                  </li>
+                  <li id="qube-rt">
+                      <div class="sponsor-image">
+                          <a href="https://www.qube-rt.com/" target="_blank">
+                              <img src="assets/sponsors/qube-rt.png" />
+                          </a>
+                      </div>
+                      <p class="sponsor-desc">
+                          Qube Research & Technologies (QRT) is a global quantitative and systematic investment manager,
+                          operating in all liquid asset classes across the world. We are a technology and data driven
+                          group implementing a scientific approach to investing. Combining data, research, technology
+                          and trading expertise has shaped QRT’s collaborative mindset which enables us to solve the
+                          most complex challenges. QRT’s culture of innovation continuously drives our ambition to
+                          deliver high quality returns for our investors.
+                      </p>
+              </ul>
+
+              <h1>Silver Sponsors</h1>
+              <ul class="sponsors-list">
+                  <li id="booking">
+                      <div class="sponsor-image">
+                          <a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c" target="_blank">
+                              <img src="assets/sponsors/booking.png" />
+                          </a>
+                      </div>
+                      <p class="sponsor-desc">
+                          Founded in 1996 in Amsterdam, Booking.com has grown from a small Dutch
+                          startup to one of the world’s leading digital travel companies. Part of
+                          Booking Holdings Inc. (NASDAQ: BKNG), Booking.com’s mission is to make it
+                          easier for everyone to experience the world.
+
+                          By investing in the technology that helps take the friction out of travel,
+                          Booking.com seamlessly connects millions of travellers with memorable experiences,
+                          a range of transport options and incredible places to stay - from homes to hotels
+                          and much more. As one of the world’s largest travel marketplaces for both established
+                          brands and entrepreneurs of all sizes, Booking.com enables properties all over the
+                          world to reach a global audience and grow their businesses.
+
+                          Booking.com is available in 43 languages and offers more than 28 million total
+                          reported accommodation listings, including over 6.6 million listings alone of homes,
+                          apartments and other unique places to stay. No matter where you want to go or what
+                          you want to do, Booking.com makes it easy and backs it all up with 24/7 customer support.
+                      </p>
+                  </li>
+                  <li id="bloomberg">
+                      <div class="sponsor-image">
+                          <a href="https://www.bloomberg.com/company" target="_blank">
+                              <img src="assets/sponsors/bloomberg.png" />
+                          </a>
+                      </div>
+                      <p class="sponsor-desc">
+                          Bloomberg, the global business and financial information and news leader,
+                          gives influential decision makers a critical edge by connecting them to a
+                          dynamic network of information, people and ideas. The company’s strength —
+                          delivering data, news and analytics through innovative technology, quickly
+                          and accurately — is at the core of the Bloomberg Terminal. Bloomberg’s enterprise
+                          solutions build on the company’s core strength: leveraging technology to allow
+                          customers to access, integrate, distribute and manage data and information
+                          across organizations more efficiently and effectively.
+                      </p>
+                  </li>
+              </ul>
+
+          </div>
+      </section>
+
+
 
       <section id="events" class="section">
           <div class="container padded">
