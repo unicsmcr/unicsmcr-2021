@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/unicsmcr/unicsmcr.com#readme",
   "dependencies": {
-    "netlify-lambda": "^2.0.11",
+    "netlify-lambda": "^2.0.16",
     "nodemailer": "^6.7.2"
   }
 }
